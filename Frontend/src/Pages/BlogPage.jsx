@@ -101,7 +101,8 @@ function BlogPage() {
             {
                 blogData ? <div className='w-[55%] h-full flex flex-col max-500:w-full'>
                     <div className='title w-full '>
-                        <h1 className='font-bold text-4xl opacity-80'>{blogData.title}</h1>
+                        <h1 className='font-bold text-5xl opacity-80 mb-2'>{blogData.title}</h1>
+                        <h3 className='text-3xl text-gray-600 font-semibold'>{blogData.description}</h3>
                     </div>
                     <div className='profile flex items-center justify-start w-full mt-8 gap-4'>
                         <Link to={`/@${blogData.creater.username}`}>
