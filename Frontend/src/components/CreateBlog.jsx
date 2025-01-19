@@ -293,6 +293,7 @@ function CreateBlog() {
         <button className='bg-blue-600 px-3 py-2 rounded-md text-white font-semibold hover:bg-blue-700'>
           {draft ? "Save as Draft" : id ? "Update Blog" : "Post Blog"}
         </button>
+        <p className='text-sm font-semibold text-red-500'>*wait for 2 to 5 minutes after click on <button></button></p>
       </form>
     </div>
   )
