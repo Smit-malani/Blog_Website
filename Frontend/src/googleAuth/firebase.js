@@ -22,6 +22,7 @@ export async function googleAuth(){
         let data = await signInWithPopup(auth, provider)        
         return data.user
     } catch (err) {
+      console.log(err)
       toast.error("Please try again")
     }
 }
