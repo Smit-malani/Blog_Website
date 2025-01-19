@@ -4,7 +4,7 @@ const userRoutes = require('./routes/userRoutes.js')
 const blogRoutes = require('./routes/blogRoutes.js')
 const cors = require('cors');
 
-app.use(cors({origin: process.env.FRONTEND_URL}));
+app.use(cors({origin: "*"}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
